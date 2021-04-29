@@ -36,7 +36,6 @@
     multi-term
     org
     projectile
-    shadowenv
     (shell :location built-in)
     shell-pop
     (term :location built-in)
@@ -209,9 +208,6 @@
     "p'" 'spacemacs/projectile-shell-pop
     "p$t" 'projectile-multi-term-in-root)
   (spacemacs/declare-prefix "p$" "projects/shell"))
-
-(defun shell/pre-init-shadowenv ()
-  (add-to-list 'spacemacs--shadowenv-modes 'comint-mode))
 
 (defun shell/init-shell ()
   (spacemacs/register-repl 'shell 'shell)
