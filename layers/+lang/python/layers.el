@@ -24,3 +24,5 @@
 (when (and (boundp 'python-backend)
            (eq python-backend 'lsp))
   (configuration-layer/declare-layer-dependencies '(dap)))
+
+(spacemacs/add-available-project-type 'python)
