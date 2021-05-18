@@ -63,15 +63,7 @@
 (defun spacemacs//javascript-jsx-file-p ()
   "Enable rjsx mode by using magic-mode-alist."
   (when buffer-file-name
-    (and (member (file-name-extension buffer-file-name) '("js" "jsx"))
-         (re-search-forward "\\(^\\s-*import React\\|\\( from \\|require(\\)[\"']react\\)"
-                            magic-mode-regexp-match-limit t)
-         (save-excursion
-           (goto-char (match-beginning 1))
-           (let ((sexp (syntax-ppss)))
-             ;; not inside string or comment
-             (not (or (nth 3 sexp)
-                      (nth 4 sexp))))))))
+    (and (member (file-name-extension buffer-file-name) '("jsx" "tsx")))))
 
 (defun spacemacs//react-setup-yasnippet ()
   (yas-activate-extra-mode 'js-mode))
