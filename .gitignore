@@ -1,3 +1,4 @@
+/filesets-cache.el
 *.db
 *.elc
 *.pyc
