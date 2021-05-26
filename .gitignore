@@ -1,3 +1,4 @@
+/undo-fu-session
 /filesets-cache.el
 *.db
 *.elc
