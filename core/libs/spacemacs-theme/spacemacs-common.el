@@ -206,7 +206,7 @@ to 'auto, tags may not be properly aligned. "
      `(shadow ((,class (:foreground ,base-dim))))
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
-     `(vertical-border ((,class (:foreground ,border))))
+     `(vertical-border ((,class (:foreground ,border :background ,border))))
      `(warning ((,class (:foreground ,war))))
      `(widget-button-pressed ((,class (:foreground ,green))))
 
