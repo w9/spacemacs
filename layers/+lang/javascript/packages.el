@@ -112,7 +112,7 @@
 (defun javascript/init-js2-mode ()
   (use-package js2-mode
     :defer t
-    :mode (("\\.m?[jt]s\\'"  . js2-mode))
+    :mode (("\\.m?[jt]sx?\\'"  . js2-mode))
     :init
     (progn
       (add-hook 'js2-mode-local-vars-hook #'spacemacs//javascript-setup-backend)

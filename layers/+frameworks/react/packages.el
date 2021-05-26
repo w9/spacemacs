@@ -70,7 +70,7 @@
     :defer t
     :init
 
-    (add-to-list 'magic-mode-alist (cons #'spacemacs//javascript-jsx-file-p 'rjsx-mode))
+    ;; (add-to-list 'magic-mode-alist (cons #'spacemacs//javascript-jsx-file-p 'rjsx-mode))
 
     ;; setup rjsx backend
     (add-hook 'rjsx-mode-local-vars-hook #'spacemacs//react-setup-backend)
