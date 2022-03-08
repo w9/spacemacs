@@ -189,15 +189,6 @@ Cate special text banner can de reachable via `998', `cat' or `random*'.
 `random' ignore special banners whereas `random*' does not."
   (let ((banner (spacemacs-buffer//choose-banner))
         (buffer-read-only nil))
-<<<<<<< HEAD
-    (when banner
-      (spacemacs-buffer/message (format "Banner: %s" banner))
-      (if (image-type-available-p (intern (file-name-extension banner)))
-          (spacemacs-buffer//insert-image-banner banner)
-        (spacemacs-buffer//insert-ascii-banner-centered banner)))
-    (spacemacs-buffer//insert-buttons)
-    (spacemacs//redisplay)))
-=======
     (progn
       (when banner
         (spacemacs-buffer/message (format "Banner: %s" banner))
@@ -207,7 +198,6 @@ Cate special text banner can de reachable via `998', `cat' or `random*'.
       (spacemacs-buffer//insert-buttons)
       ;; (spacemacs//redisplay)
       )))
->>>>>>> d7cf3d2e4... [core] Remove "redisplay" which caused GUI not able to start
 
 (defun spacemacs-buffer/display-startup-note ()
   "Decide of the startup note and display it if relevant."
